@@ -19,6 +19,7 @@ module.exports = {
     cost: {
       required: true,
       type: "float",
+      size: 8,
       min: 0,
       max: 3000
     },
