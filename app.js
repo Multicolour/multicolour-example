@@ -15,9 +15,8 @@ my_service.use(require("multicolour-seed"))
 
   // Register the auth plugin to the server.
 my_service.get("server")
-  // .use(require("multicolour-auth-oauth"))
   .use(require("multicolour-hapi-jsonapi"))
-  .reply("csrf_enabled", false)
+  // .use(require("multicolour-auth-oauth"))
 
   // Start the service.
 my_service.start()
