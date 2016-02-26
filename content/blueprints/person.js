@@ -33,6 +33,8 @@ module.exports = {
      * we set up an association to another
      * collection (blueprint) which will
      * be automatically populated for us.
+     *
+     * This is a "one to many" relationship.
      */
     gadgets: {
       collection: "gadget"
@@ -40,9 +42,11 @@ module.exports = {
 
     /*
      * A person also has a user.
+     *
+     * This is a "one to one" relationship.
      */
     user: {
-      model: "user"
+      model: "multicolour_user"
     },
 
     /**
@@ -51,7 +55,7 @@ module.exports = {
      * so let's make sure we don't return it
      * in any of our endpoints.
      *
-     * @return {Object -> Person} Our person without the secret.
+     * @return {Object -> Person} Our person without their secret.
      */
     toJSON: function() {
       // Get our Person as an object.
@@ -60,7 +64,7 @@ module.exports = {
       // Get rid of their secret!
       delete person.secret
 
-      // Return our now safe Person.
+      // Return our; now safe, Person.
       return person
     }
   }
