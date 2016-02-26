@@ -6,6 +6,7 @@ module.exports = {
    * property of our blueprints.
    */
   attributes: {
+
     /*
      * Properties in our table/collection
      * are defined as objects in our blueprints.
@@ -33,9 +34,11 @@ module.exports = {
     /*
      * This gadget is owned by someone,
      * set up a one to one relationship
-     * between this gadget and a person
+     * between this gadget and a person.
+     *
+     * This is a "one to one" relationship.
      */
-    owner: {
+    person: {
       model: "person"
     }
   }
