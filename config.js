@@ -38,12 +38,13 @@ module.exports = {
   // available to Hapi are available to Multicolour.
   api_connections: {
     port: 1811,
+    host: "localhost",
     routes: {
       cors: {
         // You should update this to reflect only
         // the domains you wish to allow access to
         // the API being generated.
-        origin: [ "*" ]
+        origin: [ "localhost:1811" ]
       }
     },
     router: { stripTrailingSlash: true }
@@ -66,11 +67,17 @@ module.exports = {
   // which in most cases is "development"
   db: {
     adapters: {
-      development: require("sails-mongo")
+      mongo: require("sails-mongo")
     },
     connections: {
       development: {
-        adapter: "development",
+        adapter: "mongo",
+        host: "localhost",
+        port: 27017,
+        database: "multicolour"
+      },
+      production: {
+        adapter: "mongo",
         host: "localhost",
         port: 27017,
         database: "multicolour"
