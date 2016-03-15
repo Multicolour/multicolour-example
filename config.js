@@ -38,7 +38,7 @@ module.exports = {
   // available to Hapi are available to Multicolour.
   api_connections: {
     port: 1811,
-    host: "localhost",
+    // host: "localhost", // Uncomment if you dont want to bind on all network devices.
     routes: {
       cors: {
         // You should update this to reflect only
