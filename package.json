@@ -10,7 +10,7 @@
     "node": ">= 4.0.0"
   },
   "dependencies": {
-    "multicolour": "^0.3.2",
+    "multicolour": "^0.6.8",
     "multicolour-seed": "^0.0.6",
     "multicolour-auth-oauth": "^1.1.8",
     "multicolour-hapi-jsonapi": "^0.2.4",
