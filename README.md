@@ -1,5 +1,7 @@
 # Multicolour Example App
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Multicolour/multicolour-example.svg)](https://greenkeeper.io/)
+
 Example Multicolour App with Hapi server, Mongo and OAuth.
 
 ### Getting started
