@@ -15,6 +15,6 @@
     "multicolour-auth-oauth": "^1.1.8",
     "multicolour-hapi-jsonapi": "^0.2.4",
     "multicolour-server-hapi": "^1.3.0",
-    "sails-mongo": "^0.12.0"
+    "sails-mongo": "^1.0.0"
   }
 }
